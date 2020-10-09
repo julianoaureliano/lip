@@ -7,27 +7,25 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>x[i];
     }
-   cout<<"[" ;
+    
    bool flag;
    for(int i=0;i<n;i++){
        flag=false;
             for(int j=0;j<i;j++){
                 if(x[i]==x[j]){
-                    
                     flag = true;
-                    
+                    cont++;
                     break;
                 }
             }
-     if(flag==false){
-         cont++;
-         if(cont==1){
-             cout<<" "<<x[i];
-         }else
-            cout<<" , "<<x[i];
-        }
+        
    } 
-   cout<<" ]";
+   if(cont>0){
+            cout<<"Existem elementos repetidos";
+        }else{
+            cout<<"Não existem elementos repetidos";
+        }
+ 
 
 return 0;
 }
