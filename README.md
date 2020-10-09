@@ -1,2 +1,4 @@
 # lip
-Arquivos da disciplina LIP
+Arquivos da disciplina LIP.
+
+Todos os exercícios foram feitos por mim.
