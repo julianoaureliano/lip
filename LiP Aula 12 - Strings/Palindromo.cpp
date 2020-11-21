@@ -1,12 +1,12 @@
 #include <iostream>
 #include <cstring>
-#define MAX_Palavra 50
+#define MAX_Palavra 200
 using namespace std;
 int main(){
 char palavra[MAX_Palavra];
 char palindromo[strlen(palavra)-1];
 int j=0;
-cin>>palavra;
+cin.getline(palavra,MAX_Palavra);
     for(int i=strlen(palavra)-1,j=0; i>=0; i--,j++){
         palindromo[j]=palavra[i];
     }
@@ -16,9 +16,9 @@ cin>>palavra;
             }
         }
 if(j == strlen(palavra)){
-   cout<<palavra<<" é um palíndromo";
+   cout<<"\""  << palavra<<"\""   <<" é um palíndromo";
 }else{
-    cout<<palavra<<" não é um palíndromo";
+    cout<<"\""  << palavra<<"\""   <<" não é um palíndromo";
 }
 return 0;
 }
